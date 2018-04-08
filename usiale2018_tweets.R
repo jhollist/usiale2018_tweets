@@ -8,7 +8,7 @@ create_token("usiale2018",
 #x<-rtweet::search_tweets("#usiale2018",n = 500)
 #save(x, file = "usiale2018.rda")
 load("usiale2018.rda")
-tweetstorm:::update_search(x,"#usiale2018") %>%
-  save(file="usiale2018.rda")
+x<-tweetstorm:::update_search(x,"#usiale2018")
+save(x,file="usiale2018.rda")
 load("usiale2018.rda")
 View(x)
