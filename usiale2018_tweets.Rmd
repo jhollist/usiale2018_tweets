@@ -1,11 +1,6 @@
 ---
 title: "USIALE 2018 Tweets"
-output: html_document
----
-
----
-title: "A summary of the tweets generated at the 2017 Evolution meeting in Portland, OR"
-author: François Michonneau
+author: Jeff Hollister (borrowed from François Michonneau)
 output:
    html_document:
      toc: true
@@ -308,7 +303,7 @@ emodict <- emodict %>%
            long_name = Name.7)
 ```
 
-```{r emoji, echo=FALSE}
+```{r emoji, echo=FALSE, eval=FALSE}
 ## inspired by: http://livefreeordichotomize.com/2017/07/17/ropensci-slack-emojis/
 emojis <- tw$text %>%
     str_extract_all("[\\uD83C-\\uDBFF\\uDC00-\\uDFFF]+") %>%
